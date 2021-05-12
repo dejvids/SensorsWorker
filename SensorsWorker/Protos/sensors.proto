@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+option csharp_namespace = "SensorsClient";
+package sensors;
+
+// The greeting service definition.
+service Sensors {
+  // Sends a greeting
+  rpc UpdateSensors (UpdateRequest) returns (UpdateResponse){}
+}
+
+// The request message containing the user's name.
+message UpdateRequest {
+  double temperature = 1;
+  double humidity = 2;
+  double preassure = 3;
+}
+
+message UpdateResponse {
+	string message = 1;
+}
