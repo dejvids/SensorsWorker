@@ -28,4 +28,8 @@
   <ItemGroup>
     <Protobuf Include="Protos\sensors.proto" GrpcServices="Client" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ESP8266\" />
+  </ItemGroup>
 </Project>
